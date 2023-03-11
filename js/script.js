@@ -16,7 +16,7 @@ function showForm() {
   
     var url = `https://api.telegram.org/bot6196812518:AAHCIQdfWE1Pu-Ei2B5avacL_pg5OcA5OM0/sendMessage?chat_id=191899857&text=${name}_${phone}`;
     
-    location.href=url;
+    return url;
 
     
   }
