@@ -168,7 +168,9 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 3rem;
     justify-items: center;
-    align-items: center; }
+    align-items: center; 
+    font-size: 1.5rem;
+    text-align: center;}
     .header__seenon-logos img {
       max-height: 5rem;
       max-width: 100%;
