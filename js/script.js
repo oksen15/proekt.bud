@@ -1,4 +1,16 @@
- function sendMessage(event) {
+ 
+function showForm() {
+    var form = document.getElementById("myForm");
+    form.style.display = "block";
+  }
+
+
+
+
+
+
+
+function sendMessage(event) {
     event.preventDefault();
   
     var name = document.getElementById("name").value;
