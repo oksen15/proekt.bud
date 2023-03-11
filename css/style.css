@@ -444,3 +444,47 @@ body {
   margin-left: auto;
   text-align: center;
   width: 70%;}
+
+
+
+
+ /* Стили для всей формы */
+#myForm {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Стили для заголовка формы */
+#myForm h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* Стили для полей ввода */
+#myForm input[type=text], #myForm input[type=email], #myForm textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+/* Стили для кнопки "Отправить" */
+#myForm button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Стили для кнопки "Отправить" при наведении */
+#myForm button:hover {
+  background-color: #45a049;
+}
