@@ -5,6 +5,13 @@ function showForm() {
 
 
 
+  function hideForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
+
+
+
 
  function sendMessage() {
     var nameValue = document.getElementById("name").value;
