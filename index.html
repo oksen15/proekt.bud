@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/pngwing 9.png">
          <script src="js/script.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
        
         
         <title>Ваш Проект Буд &mdash; Your home, Your freedom</title>
@@ -25,14 +26,14 @@
             
              <button onclick="showForm()" class="btn header__btn ">Зворотний дзвінок</button>
             
-            <form id="myForm" style="display:none;">
-                 <label for="name">Имя:</label>
-                 <input type="text" id="name" name="name"><br><br>
-                 <label for="phone">Номер телефона:</label>
-                 <input type="text" id="phone" name="phone"><br><br>
-                  <button onclick=" sendToTelegram()">Отправить</button>
+              <form id="myForm" style="display:none;">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="phone">Телефон:</label>
+                <input type="text" id="phone" name="phone"><br><br>
+                <input type="button" value="Отправить" onclick="sendMessage()">
               </form>
-            
+
             
              
             
