@@ -455,6 +455,21 @@ body {
   padding: 20px;
   max-width: 500px;
   margin: 0 auto;
+  position: relative;
+}
+
+/* Стили для кнопки закрытия */
+#myForm button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
 }
 
 /* Стили для заголовка формы */
@@ -464,7 +479,7 @@ body {
 }
 
 /* Стили для полей ввода */
-#myForm input[type=text], #myForm input[type=email], #myForm textarea {
+#myForm input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -475,16 +490,17 @@ body {
 }
 
 /* Стили для кнопки "Отправить" */
-#myForm button {
-  background-color: #4CAF50;
+#myForm input[type=button] {
+  background-color: #c69963;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 30px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 /* Стили для кнопки "Отправить" при наведении */
-#myForm button:hover {
-  background-color: #45a049;
+#myForm input[type=button]:hover {
+  background-color: #d76624;
 }
