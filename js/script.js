@@ -6,35 +6,36 @@ function showForm() {
 
 
 
+ function sendMessage() {
+    var nameValue = document.getElementById("name").value;
+    var phoneValue = document.getElementById("phone").value;
+    
+    // Формируем URL для отправки запроса на сервер Телеграма
+    var url = `https://api.telegram.org/bot6196812518:AAHCIQdfWE1Pu-Ei2B5avacL_pg5OcA5OM0/sendMessage`;
+    
+    // Формируем тело запроса
+    var data = new FormData();
+    data.append('chat_id', '191899857');
+    data.append('text', `Имя: ${nameValue}\nТелефон: ${phoneValue}`);
+    
+    // Отправляем POST-запрос на сервер Телеграма с помощью библиотеки axios
+    axios.post(url, data)
+      .then(function (response) {
+        console.log(response);
+        window.close(); 
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 
-function sendToTelegram() {
-  var nameValue = document.getElementById("name").value;
-  var phoneValue = document.getElementById("phone").value;
-  var telegramURL = "https://api.telegram.org/bot6196812518:AAHCIQdfWE1Pu-Ei2B5avacL_pg5OcA5OM0/sendMessage?chat_id=191899857&text=" + encodeURIComponent("Имя: " + nameValue + ", Номер телефона: " + phoneValue);
-  window.location.href = telegramURL;
-}
-</script>
+      function closeForm() {
+        document.getElementsByTagName('form')[0].style.display = 'none';
+      }
+
+      closeForm();
+  }
 
 
 
 
 
-
-
-// function sendToLink() {
-//   var nameValue = document.getElementById("name").value;
-//   var phoneValue = document.getElementById("phone").value;
-//   var link = "https://api.telegram.org/bot6196812518:AAHCIQdfWE1Pu-Ei2B5avacL_pg5OcA5OM0/sendMessage?chat_id=191899857&text=name=" + nameValue + "&phone=" + phoneValue;
-//   window.location.href = link;
-// }
-
-
-
-// function sendToLink() {
-//   var nameValue = document.getElementById("name").value;
-//   var phoneValue = document.getElementById("phone").value;
-//   var url = "https://api.telegram.org/bot6196812518:AAHCIQdfWE1Pu-Ei2B5avacL_pg5OcA5OM0/sendMessage?chat_id=191899857&text=Имя: " + nameValue + ", Номер телефона: " + phoneValue;
-//   var xhr = new XMLHttpRequest();
-//   xhr.open("GET", url);
-//   xhr.send();
-// }
