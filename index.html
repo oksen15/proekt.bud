@@ -31,7 +31,7 @@
                 <label for="name">Имя:</label>
                 <input type="text" id="name" name="name"><br><br>
                 <label for="phone">Телефон:</label>
-                <input type="text" id="phone" name="phone"><br><br>
+                <input type="text" id="phone" name="phone" onkeypress="if(event.keyCode==13) sendMessage()"><br><br>
                 <input type="button" value="Отправить" onclick="sendMessage()">
               </form>
 
