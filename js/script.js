@@ -5,12 +5,13 @@ function showForm() {
 
 
 
-  function hideForm() {
+ function hideForm() {
     document.getElementById("myForm").style.display = "none";
-}
-
-
-
+    document.getElementById("name").value = "";
+    document.getElementById("phone").value = "";
+    event.preventDefault();
+  }
+ 
 
 
  function sendMessage() {
