@@ -22,7 +22,7 @@ function showForm() {
     axios.post(url, data)
       .then(function (response) {
         console.log(response);
-        window.close(); 
+      
       })
       .catch(function (error) {
         console.log(error);
