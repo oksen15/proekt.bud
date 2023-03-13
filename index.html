@@ -26,7 +26,7 @@
             
              <button onclick="showForm()" class="btn header__btn ">Зворотний дзвінок</button>
             
-              <form id="myForm" style="display:none;">
+              <form id="myForm" style="display:none;" onsubmit="sendMessage(); return false;">
                   <button onclick="hideForm()" style="float:right; background-color: #f44336; color: white; padding: 5px 10px; border: none; cursor: pointer;">x</button>
                 <label for="name">Имя:</label>
                 <input type="text" id="name" name="name"><br><br>
